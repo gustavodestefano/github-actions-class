@@ -1,0 +1,11 @@
+name: Olá, Multiverso!!!
+
+on: [push]
+
+jobs:
+  ola_multiverso_jobs:
+    runs on: ubuntu-latest
+
+    steps:
+      - name: Chamando
+      run: echo "Olá, Multiverso da Loucura"

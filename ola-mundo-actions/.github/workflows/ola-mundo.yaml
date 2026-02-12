@@ -4,8 +4,11 @@ on: [push]
 
 jobs:
   ola_multiverso_jobs:
-    runs on: ubuntu-latest
+    runs-on: ubuntu-latest
 
     steps:
+      -name: Checkout
+       uses: actions/checkout@v2
+
       - name: Chamando
-      run: echo "Olá, Multiverso da Loucura"
+       run: echo "Olá, Multiverso da Loucura"
